@@ -21,8 +21,6 @@ export class IndexComponent {
     {"name": "Filippo", "link": "https://www.instagram.com/fillo.mv/","color": "#84A98C", "image": "pietro.svg"},
     {"name": "Giuseppe", "color": "#F1AB86", "image": "pietro.svg"},
     {"name": "Neri", "color": "#F7DBA7", "image": "pietro.svg"},
-    {"name": "Noemi", "color": "#DDC8C4", "image": "alessia.svg"},
-    {"name": "Giulia", "color": "#C9EDDC", "image": "alessia.svg"},
     {"name": "Andrea", "link": "https://www.instagram.com/andre.delgiu/", "color": "#DBD9DB", "image": "alessia.svg"},
     {"name": "Alessandro", "link": "https://www.instagram.com/aim.alle_/", "color": "#E7EFC5", "image": "pietro.svg"},
     {"name": "Ludovica", "link": "https://www.instagram.com/ludovica.valentee/", "color": "#F896D8", "image": "alessia.svg"},
