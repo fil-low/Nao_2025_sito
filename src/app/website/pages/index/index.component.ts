@@ -18,7 +18,7 @@ export class IndexComponent {
     {"name": "Eleonora", "color": "#EABDA8", "image": "alessia.svg"},
     {"name": "Lorenzo", "color": "#D36135", "image": "pietro.svg"},
     {"name": "Matteo", "color": "#E6E49F", "image": "pietro.svg"},
-    {"name": "Filippo", "color": "#84A98C", "image": "pietro.svg"},
+    {"name": "Filippo", "link": "https://www.instagram.com/fillo.mv/","color": "#84A98C", "image": "pietro.svg"},
     {"name": "Giuseppe", "color": "#F1AB86", "image": "pietro.svg"},
     {"name": "Neri", "color": "#F7DBA7", "image": "pietro.svg"},
     {"name": "Noemi", "color": "#DDC8C4", "image": "alessia.svg"},
