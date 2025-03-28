@@ -37,6 +37,20 @@ export class CompetitionsComponent {
       "subtitle": "Gare",
       "content": "Il nostro progetto è stato organizzato in collaborazione con la Pinacoteca Galleria Estense di Modena. Lo scopo del robot è l'intrattenimento ludico educativo per i più piccoli e dare informazioni sul museo e i suoi reparti. Lo scopo è rendere accattivante il mondo dell'arte ai bambini attraverso l'interazione con NAO.",
       "image": "nao-2.jpg"
+    },
+    {
+      "date": "Maggio 2023",
+      "title": "Finale a Firenze",
+      "subtitle": "Gare",
+      "content": "Il nostro progetto è stato organizzato in collaborazione con il gruppo Aimag. Lo scopo è rendere più facile e intuitiva la raccolta differenziata mediante l'interazione con NAO.",
+      "image": "nao-1.jpg"
+    },
+    {
+      "date": "Maggio 2024",
+      "title": "Fiera Didacta a Firenze",
+      "subtitle": "Gare",
+      "content": "Il nostro progetto è stato organizzato in collaborazione con l'azienda Vivai Morselli. Lo scopo è rendere facilitare la gestione delle attività commerciali e la relazione con i clienti mediante l'interazione con NAO.",
+      "image": "nao-2.jpg"
     }
   ]
 }

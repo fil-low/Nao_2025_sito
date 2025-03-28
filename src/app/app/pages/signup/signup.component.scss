@@ -63,7 +63,7 @@ form input {
     padding: 0 45px;
     font-size: 18px;
     background: none;
-    caret-color: #316bff;
+    caret-color: #ffaa01;
     border-radius: 5px;
     border: 1px solid #bfbfbf;
     border-bottom-width: 2px;
@@ -72,7 +72,7 @@ form input {
 
 form .field input:focus,
 form .field.valid input {
-    border-color: #316bff;
+    border-color: #ffaa01;
 }
 
 form .field.shake input,
@@ -102,7 +102,7 @@ form .field.error input {
 
 form input:focus~.icon,
 form .field.valid .icon {
-    color: #316bff;
+    color: #ffaa01;
 }
 
 form .field.shake input:focus~.icon,
@@ -136,7 +136,7 @@ form .pass-txt {
 }
 
 .wrapper a {
-    color: #316bff;
+    color: #ffaa01;
     text-decoration: none;
 }
 
@@ -151,21 +151,21 @@ form input[type="submit"] {
     color: #fff;
     padding: 0;
     border: none;
-    background: #316bff;
+    background: #ffaa01;
     cursor: pointer;
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
 form input[type="submit"]:hover {
-    background: #2c52ed;
+    background: #ffaa01;
 }
 
 form input[type="submit"]:disabled {
     opacity: .6;
 
     &:hover {
-        background: #316bff;
+        background: #ffaa01;
         cursor: not-allowed;
     }
 }
