@@ -14,7 +14,7 @@ export class IndexComponent {
     {"name": "Filippo", "link": "https://www.instagram.com/fillo.mv/","color": "#84A98C", "image": "pietro.svg"},
     {"name": "Mia", "color": "#00CECB", "image": "alessia.svg"},
     {"name": "Alessandro", "link": "https://www.instagram.com/alessandro.sabbadinii/","color": "#FFFFEA", "image": "pietro.svg"},
-    {"name": "Martin", "color": "#61988E", "image": "pietro.svg"},
+    {"name": "Martin", "link": "https://www.instagram.com/fang.bruh/","color": "#61988E", "image": "pietro.svg"},
     {"name": "Eleonora", "link": "https://www.instagram.com/e.leonoraverri/","color": "#EABDA8", "image": "alessia.svg"},
     {"name": "Francesco", "link": "https://www.instagram.com/fra.cinque.0_0/", "color": "#E6E49F", "image": "pietro.svg"},
     {"name": "Giuseppe", "color": "#F1AB86", "image": "pietro.svg"},

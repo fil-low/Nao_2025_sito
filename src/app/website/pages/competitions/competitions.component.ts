@@ -51,6 +51,13 @@ export class CompetitionsComponent {
       "subtitle": "Gare",
       "content": "Il nostro progetto è stato organizzato in collaborazione con l'azienda Vivai Morselli. Lo scopo è rendere facilitare la gestione delle attività commerciali e la relazione con i clienti mediante l'interazione con NAO.",
       "image": "nao-2.jpg"
-    }
+    },
+    {
+      "date": "Maggio 2025",
+      "title": "Finale a Venezia",
+      "subtitle": "Gare",
+      "content": "Il nostro progetto è stato organizzato in collaborazione con il circolo scacchistico Club 64 ASD. Lo scopo è insegnare a tutti il gioco degli scacchi, rendendo guidato e accessibile, mediante l'interazione con NAO.",
+      "image": "nao-1.jpg"
+    },
   ]
 }
