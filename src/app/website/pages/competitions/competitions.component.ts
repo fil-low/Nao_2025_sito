@@ -53,11 +53,11 @@ export class CompetitionsComponent {
       "image": "nao-2.jpg"
     },
     {
-      "date": "Maggio 2025",
-      "title": "Finale a Venezia",
+      "date": "Giugno 2025",
+      "title": "Finale a Genova",
       "subtitle": "Gare",
       "content": "Il nostro progetto è stato organizzato in collaborazione con il circolo scacchistico Club 64 ASD. Lo scopo è insegnare a tutti il gioco degli scacchi, rendendo guidato e accessibile, mediante l'interazione con NAO.",
       "image": "nao-1.jpg"
     },
   ]
-}
+} 

@@ -8,7 +8,7 @@
     display: flex;
     width: 100%;
     align-items: center;
-    background: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0.9)),
+    background: linear-gradient(100deg, rgba(0, 0, 0, .2), rgba(52, 52, 52, 0.9)),
         url('/assets/img/index-bg.webp') no-repeat center center;
     background-size: cover;
     overflow: hidden;
@@ -37,7 +37,7 @@
 
 .hero__content h1,
 .hero__content p {
-    color: #fff;
+    color: #ffffff;
 }
 
 .hero--small {
@@ -102,7 +102,7 @@
 .bg-cover {
     display: flex;
     padding: 100px 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7)), url("../../../../assets/img/index-bg.webp") no-repeat center center;
+    background: linear-gradient(0deg, rgb(59, 59, 59)), rgb(59, 59, 59), url("../../../../assets/img/index-bg.webp") no-repeat center center;
     background-size: cover;
 }
 
@@ -180,7 +180,7 @@
     background: #6adf91;
     border-radius: 100%;
     font-size: 56px;
-    color: #000;
+    color: hsl(0, 0%, 0%);
     font-weight: 700;
     text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
         1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
@@ -197,7 +197,7 @@
 /* Panel Blue */
 
 .panel-blue {
-    background: linear-gradient(180deg, #2b00a2, #f47c00); 
+    background: linear-gradient(180deg, #FFAA01, #1D3881); 
     padding: 100px 30px;
 }
 
