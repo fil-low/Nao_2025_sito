@@ -46,7 +46,7 @@ export class CompetitionsComponent {
       "image": "nao-1.jpg"
     },
     {
-      "date": "Maggio 2024",
+      "date": "Marzo 2024",
       "title": "Fiera Didacta a Firenze",
       "subtitle": "Gare",
       "content": "Il nostro progetto è stato organizzato in collaborazione con l'azienda Vivai Morselli. Lo scopo è rendere facilitare la gestione delle attività commerciali e la relazione con i clienti mediante l'interazione con NAO.",
