@@ -10,16 +10,16 @@ import Flickity from 'flickity';
 export class IndexComponent {
   private flickityInstance: Flickity | undefined;
   components = [
-    {"name": "Andrea", "color": "#FFED66", "image": "pietro.svg"},
-    {"name": "Filippo", "link": "https://www.instagram.com/fillo.mv/","color": "#84A98C", "image": "pietro.svg"},
-    {"name": "Alessandro", "link": "https://www.instagram.com/alessandro.sabbadinii/","color": "#FFFFEA", "image": "pietro.svg"},
-    {"name": "Martin", "link": "https://www.instagram.com/fang.bruh/","color": "#61988E", "image": "pietro.svg"},
-    {"name": "Eleonora", "link": "https://www.instagram.com/e.leonoraverri/","color": "#EABDA8", "image": "alessia.svg"},
-    {"name": "Francesco", "link": "https://www.instagram.com/fra.cinque.0_0/", "color": "#E6E49F", "image": "pietro.svg"},
-    {"name": "Giuseppe", "color": "#F1AB86", "image": "pietro.svg"},
-    {"name": "Gama", "color": "#FFFFEA", "image": "pietro.svg"},
-    {"name": "Giovanni", "color": "#00CECB", "image": "pietro.svg"},
-    {"name": "Mia", "color": "#61988E", "image": "alessia.svg"},
+    {"name": "Andrea", "color": "#40E0D0", "image": "pietro.svg"},
+    {"name": "Filippo", "link": "https://www.instagram.com/fillo.mv/","color": "#FFD700", "image": "pietro.svg"},
+    {"name": "Alessandro", "link": "https://www.instagram.com/alessandro.sabbadinii/","color": "#32CD32", "image": "pietro.svg"},
+    {"name": "Martin", "link": "https://www.instagram.com/fang.bruh/","color": "#2A3D66", "image": "pietro.svg"},
+    {"name": "Eleonora", "link": "https://www.instagram.com/e.leonoraverri/","color": "#FF6F61", "image": "alessia.svg"},
+    {"name": "Francesco", "link": "https://www.instagram.com/fra.cinque.0_0/", "color": "#3EB489", "image": "pietro.svg"},
+    {"name": "Giuseppe", "color": "#3B5249", "image": "pietro.svg"},
+    {"name": "Gama", "color": "#6593B4", "image": "pietro.svg"},
+    {"name": "Giovanni", "color": "#FF7F50", "image": "pietro.svg"},
+    {"name": "Mia", "color": "#E6E6FA", "image": "alessia.svg"},
   ]
 
   constructor(private el: ElementRef) {}
