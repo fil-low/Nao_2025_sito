@@ -1,0 +1,23 @@
+<app-header theme="black"></app-header>
+
+<div class="hero-title">
+    <h1 class="big-text">Photos</h1>
+</div>
+
+<div class="grid">
+    <div *ngFor="let name of images" class="content flow featured">
+        <img src="{{'../../../../assets/photos/' + name}}" alt="image" (click)="isExpanded['show'] = true; isExpanded['target'] = name">
+    </div>
+</div>
+
+<div *ngIf="isExpanded['show']" class="expanded-image" (click)="isExpanded['show'] = false">
+    <img src="{{'../../../../assets/photos/' + isExpanded['target']}}" alt="image">
+</div>
+
+<div class="load-3">
+    <div class="line" [ngClass]="{'show': isLoading}"></div>
+    <div class="line" [ngClass]="{'show': isLoading}"></div>
+    <div class="line" [ngClass]="{'show': isLoading}"></div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,64 @@
+<div class="header">
+    <p (click)="logout()" class="button logout">Logout</p>
+</div>
+
+<div class="container">
+
+    <div class="section-title">Cart</div>
+    <div class="top-container">
+        <ul class="scrollable-list">
+            <li *ngFor="let item of keysArray">
+                <img *ngIf="dataProduct[item]['image'] != ''" src="../../../../assets/plants/{{dataProduct[item]['image']}}" alt="plant image">
+                <div class="content">
+                    <span class="content-sx">
+                        <div class="name">{{dataProduct[item]['name']}}</div>
+                        <div class="price">€{{dataProduct[item]['price']}}</div>
+                        <div class="description">{{dataProduct[item]['description']}}</div>
+                    </span>
+                    <span class="content-dx">
+                        <div class="item_counter">
+                            <div (click)="addItem('rm', item)">-</div>
+                            <div class="counter">{{cartItems[item]}}</div>
+                            <div (click)="addItem('add', item)">+</div>
+                        </div>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    
+        <div class="checkout-box">
+            <div class="title-box">Order summary</div>
+            <ul>
+                <li>
+                    <div>Subtotal</div>
+                    <div>{{totalPrice / 100 * 78}}</div>
+                </li>
+                <li>
+                    <div>IVA</div>
+                    <div>{{totalPrice / 100 * 22}}</div>
+                </li>
+                <li>
+                    <div>Total</div>
+                    <div>€{{totalPrice}}</div>
+                </li>    
+            </ul>
+            <a href="#" class="button">Continue to pay</a>
+        </div>
+    </div>
+    
+
+
+    <div class="main-carousel-2">
+        <div class="AI-box">
+            N-AI generator...
+        </div>
+        <div class="carousel-cell" *ngFor="let data of carouselData">
+            <div class="carousel-cell__content">
+                <img src="../../../../assets/plants/{{data['image']}}" alt="">
+
+                <div class="button" (click)="addItem('add', data['name'])">Aggiungi</div>
+            </div>
+        </div>
+    </div>
+</div>
+

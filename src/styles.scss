@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+// Base Style
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    color: #000;
+    padding-bottom: 30px;
+}
+
+p {
+    line-height: 28px;
+    color: #666;
+    font-weight: 300;
+}
+
+p a {
+    color: #424242;
+    font-weight: 500;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+strong {
+    font-weight: 600;
+}
+
+.big-text {
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.med-text {
+    font-size: 40px;
+}
+
+.normal-text {
+    font-size: 20px;
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+.intro-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button {
+    cursor: pointer;
+    padding: 18px 28px;
+    background: #ffaa01;
+    color: #fff;
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: #ffaa01;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .big-text {
+        font-size: 40px;
+    }
+
+}

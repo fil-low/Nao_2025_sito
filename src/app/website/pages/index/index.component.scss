@@ -1,0 +1,249 @@
+@import '~flickity/css/flickity.css';
+
+/* ! Hero */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: linear-gradient(100deg, rgba(0, 0, 0, .2), rgba(52, 52, 52, 0.9)),
+        url('/assets/img/index-bg.webp') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.hero:after {
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.4
+}
+
+.hero__content {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 30px;
+    z-index: 1;
+    position: relative;
+}
+
+.hero__content h1,
+.hero__content p {
+    color: #ffffff;
+}
+
+.hero--small {
+    height: 450px;
+    text-align: center;
+}
+
+
+#video-back {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+}
+
+
+
+/* ! Poster */
+
+.poster {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+}
+
+.poster__img {
+    width: 50%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poster__img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.poster__content {
+    width: 50%;
+    padding: 50px;
+}
+
+@media (max-width: 768px) {
+    .poster {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .poster__img,
+    .poster__content {
+        width: 100%;
+    }
+}
+
+/* BG Cover */
+
+.bg-cover {
+    display: flex;
+    padding: 100px 0;
+    background: linear-gradient(0deg, rgb(59, 59, 59)), rgb(59, 59, 59), url("../../../../assets/img/index-bg.webp") no-repeat center center;
+    background-size: cover;
+}
+
+.bg-cover__text {
+    width: 50%;
+    padding: 30px;
+}
+
+.bg-cover__title {
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .bg-cover {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .bg-cover__text,
+    .bg-cover__title {
+        width: 100%;
+    }
+}
+
+
+/* ! Grid */
+
+.grid {
+    display: flex;
+    max-width: 1350px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.grid .col {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        flex-wrap: wrap
+    }
+
+    .dot {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* ! Carousel */
+
+.main-carousel {
+    padding: 40px 0;
+    max-width: 100vw;
+    overflow: hidden;
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel-cell {
+    height: 350px;
+    width: 350px;
+    margin-right: 40px;
+}
+
+.carousel-cell__content {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #6adf91;
+    border-radius: 100%;
+    font-size: 56px;
+    color: hsl(0, 0%, 0%);
+    font-weight: 700;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+        1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    font-family: 'Acme', sans-serif;
+    line-height: 350px;
+    text-align: center;
+}
+
+.carousel-cell__content {
+    background-size: contain;
+}
+
+
+/* Panel Blue */
+
+.panel-blue {
+    background: linear-gradient(180deg, #6A99B7, #1D3881); 
+    padding: 100px 30px;
+}
+
+.panel-blue__text {
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    height: 250px;
+    width: 250px;
+    background: #6adf91;
+    border-radius: 100%;
+    line-height: 250px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .dot {
+        margin: 0;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+}
+
+.mt-sma-0 {
+    position: relative;
+    margin-left: -575px;
+    margin-top: 200px;
+
+    & p {
+        font-size: 18px;
+        color: rgb(215, 215, 215);
+    }
+}

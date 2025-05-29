@@ -1,0 +1,97 @@
+<app-header theme="white"></app-header>
+
+<div class="hero">
+    <div class="hero__content reveal">
+        <p class="intro-text">Gali Project</p>
+        <h1 class="big-text">GalileiIsNao</h1>
+        <a href="mailto:galileisnao21@gmail.com" class="button">Contattaci</a>
+    </div>
+</div>
+
+
+
+<div class="poster mt-3">
+    <div class="poster__img reveal">
+        <img src="../../../../assets/img/foto2025.jpg" alt="">
+    </div>
+    <div class="poster__content reveal">
+        <h3 class="big-text">Chi siamo</h3>
+        <p style="text-align: justify">
+            Siamo dieci ragazzi che frequentano l'<a href="https://www.galileimirandola.edu.it/" target="_blank">ISS G. Galilei di Mirandola (MO)</a>: Andrea, Filippo, Alessandro, Martin, Eleonora, Francesco, Mia, Giuseppe, Giovanni e Gama. Grazie al prof. Alberto
+            Michelini, abbiamo avuto la possibilità di entrare nel vasto mondo della robotica.
+        </p>
+        <a href="#team" class="button">Team</a>
+    </div>
+</div>
+
+<div class="grid mt-3" id="team">
+    <div class="col reveal">
+        <h3 class="big-text">Il team Nao </h3>
+    </div>
+</div>
+
+<div class="main-carousel">
+    <div class="carousel-cell" *ngFor="let component of components">
+        <a *ngIf="component['link']" href="{{component['link']}}" target="_blank" class="carousel-cell__content" [ngStyle]="{backgroundImage: 'url(../../../../assets/avatars/' + component['image'] + ')', backgroundColor: component['color']}">
+            {{component["name"]}}
+        </a>
+        <div *ngIf="!component['link']" class="carousel-cell__content" [ngStyle]="{backgroundImage: 'url(../../../../assets/avatars/' + component['image'] + ')', backgroundColor: component['color']}">
+            {{component["name"]}}
+        </div>
+    </div>
+</div>
+
+
+<div class="poster mt-3">
+
+    <div class="poster__content reveal">
+        <h3 class="big-text">Il nostro partner</h3>
+        <p style="text-align: justify">
+            Il progetto di quest'anno è sponsorizzato dal circolo scacchistico Club 64. Offre un ambiente accogliente per giocatori di tutti i livelli, con attività che spaziano da partite amatoriali a tornei ufficiali. Organizza corsi di formazione, eventi tematici e incontri settimanali per appassionati. Il club si impegna a diffondere la cultura scacchistica e a favorire lo sviluppo delle abilità strategiche e logiche dei suoi membri.
+        </p>
+        <a href="https://www.club64.it" class="button" target="_blank">Club 64</a>
+    </div>
+
+    <div class="poster__img  reveal">
+        <img src="../../../../assets/img/logoclub64.png" alt=""> <!-- 1051 x 563 -->
+    </div>
+
+</div>
+
+<div class="panel-blue mt-3" id="projects">
+    <div class="grid">
+        <div class="col panel-blue__dots">
+            <div class="dot zoom"
+                style="background: url(../../../../assets/img/prj-1.jpg) no-repeat center center; background-size: cover;"></div>
+            <div class="dot zoom"
+                style="background: url(../../../../assets/img/prj-2.jpg) no-repeat center center; background-size: cover;"></div>
+            <div class="dot zoom"
+                style="background: url(../../../../assets/img/prj-3.jpg) no-repeat center center; background-size: cover;"></div>
+                <div class="dot zoom"
+                style="background: url(../../../../assets/img/prj-4.jpg) no-repeat center center; background-size: cover;"></div>
+        </div>
+        <div class="col panel-blue__text">
+            <div class="grid">
+                <div class="col reveal ">
+                    <h3 class="big-text tw">Progetti</h3>
+                </div>
+                <div class="col reveal mt-sma-0">
+                    <p class="tw mt-2 text-secondary" style="text-align: justify;">
+                     NAO è un robot umanoide avanzato dotato di sistemi per la percezione dell’ambiente. 
+                     Grazie a due videocamere e quattro microfoni direzionali, è in grado di vedere e ascoltare, 
+                     potendo così interagire con l’ambiente circostante e riconoscere volti e suoni. 
+                     È inoltre equipaggiato con due altoparlanti che gli permettono di comunicare in diverse lingue.
+
+                    Nao dispone anche di sensori tattili, che gli consentono di percepire il contatto fisico e dare dei feedback. 
+                    Per programmare e personalizzare il comportamento di NAO, utilizziamo il software "Choregraphe", 
+                    un ambiente di programmazione a blocchi che permette di creare sequenze di azioni e movimenti.    
+            
+                    </p>
+                    <a routerLink="/competitions" class="button">See more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

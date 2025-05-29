@@ -1,0 +1,24 @@
+<div class="header-bg {{theme}}" [ngClass]="{'show': blackBg}">
+    <div class="header">
+        <a routerLink="/" class="logo">
+            <img *ngIf="theme != 'black'" src="./assets/img/logonao1 (1).jpg" alt="Logo">
+            <img *ngIf="theme == 'black'" src="./assets/img/logonao1 (1).jpg" alt="Logo">
+        </a>
+        <ul class="menu" [ngClass]="{'menu--open': mobileMenu}">
+            <!-- <li><a routerLink="/">Home</a></li> -->
+            <li><a routerLink="/photos">Foto e Video</a></li>
+            <li><a routerLink="/competitions">Competizioni</a></li>
+            <li><a href="mailto:galileisnao21@gmail.com">Contattaci</a></li>
+
+            <li><a routerLink="/login" class="button">Accedi</a></li>
+        </ul>
+        <div class="cta">
+            <a routerLink="/login" class="button">Accedi</a>
+        </div>
+        <div class="hamburger" (click)="mobileMenu = !mobileMenu" [ngClass]="{'open': mobileMenu}">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div>

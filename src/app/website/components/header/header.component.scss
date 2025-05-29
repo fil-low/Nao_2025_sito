@@ -1,0 +1,130 @@
+.header-bg,
+.header-bg.white {
+    --text-color: #fff;
+    --header-bg: #00000089;
+    --hamburger-icon: #fff;
+    --mobile-menu-bg: #000;
+}
+
+.header-bg.black {
+    --text-color: #000;
+    --header-bg: #ffffff89;
+    --hamburger-icon: #000;
+    --mobile-menu-bg: #fff;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 30px;
+    display: flex;
+    max-width: 1350px;
+}
+
+.header-bg {
+    width: 100%;
+    height: 112px;
+    background-color: #00000000;
+    z-index: 9;
+    position: fixed;
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+
+.logo img {
+    height: 46px;
+}
+
+@media (max-width: 768px) {
+
+    .header-bg {
+        height: 108px;
+    }
+
+}
+
+.header-bg.show {
+    background-color: var(--header-bg);
+}
+
+.logo {
+    z-index: 1
+}
+
+.menu {
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+    width: 100%;
+    z-index: 0;
+}
+
+.menu li {
+    display: inline-block;
+    &:last-child {
+        display: none;
+    }
+}
+
+.menu li a {
+    color: var(--text-color);
+    padding: 15px;
+    display: block;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .cta {
+        display: none;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        background: var(--mobile-menu-bg);
+        height: 100vh;
+        padding-top: 80px;
+    }
+
+    .menu li {
+        display: block;
+        &:last-child {
+            display: block;
+            margin: 15px 30px;
+            position: absolute;
+            bottom: 20px;
+        }
+    }
+
+    .menu li a {
+        padding: 15px 30px;
+        font-size: 20px;
+    }
+
+    .menu--open {
+        right: 0%;
+    }
+
+    .hamburger {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 40px;
+        right: 30px
+    }
+
+    .hamburger span {
+        background-color: var(--hamburger-icon);
+        height: 3px;
+        width: 100%;
+        display: block;
+        margin-bottom: 5px;
+    }
+}

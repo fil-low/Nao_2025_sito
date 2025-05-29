@@ -1,0 +1,20 @@
+.footer {
+    background: linear-gradient(180deg, #1E3981, #00326D);;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer * {
+    box-sizing: border-box;
+}
+
+.footer-social-container a img {
+    width: 20px;
+    height: auto;
+    margin: 12px;
+}
+
+.footer-copy,
+.footer-date {
+    color: #fff;
+}

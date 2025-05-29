@@ -1,0 +1,57 @@
+<app-header theme="black"></app-header>
+
+<div class="container">
+    <div class="timeline">
+        <ul>
+            <li *ngFor="let content of cardContent; let i = index">
+                <div class="card" [ngClass]="{'active': cardStatus[i]}">
+                    <div class="lx-card">
+                        <img src="../../../../assets/img/{{content['image']}}"
+                            alt="">
+                        <h3 class="date">{{content["date"]}}</h3>
+                        <div class="content-card">
+                            <h2>{{content["subtitle"]}}</h2>
+                            <h1>{{content["title"]}}</h1>
+                        </div>
+                        <div class="card-button" (click)="cardStatus[i] = !cardStatus[i]">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                class="card-cta-modal-button-small-icon card-modal-button-small-icon" height="18" fill="#d6d6d7">
+                                <path
+                                    d="M17.25,8.51H11.5V2.75A1.5,1.5,0,0,0,10,1.25h0a1.5,1.5,0,0,0-1.5,1.5V8.5H2.75a1.5,1.5,0,0,0,0,3H8.5v5.75a1.5,1.5,0,0,0,1.5,1.5h0a1.5,1.5,0,0,0,1.5-1.5V11.5h5.75a1.5,1.5,0,0,0,0-3Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="rx-card">
+                        <p>{{content["content"]}}</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- <div class="card" [ngClass]="{'active': cardStatus}">
+    <div class="lx-card">
+        <img src="https://www.apple.com/euro/mac/home/a/screens_alt/images/overview/consider/mac_ease__bvgkz2zdltxy_xlarge.jpg"
+            alt="">
+        <h3 class="date">20th may, 2010</h3>
+        <div class="content-card">
+            <h2>Subtitle</h2>
+            <h1>Heading 1</h1>
+        </div>
+        <div class="card-button" (click)="cardStatus = !cardStatus">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                class="card-cta-modal-button-small-icon card-modal-button-small-icon" height="18" fill="#d6d6d7">
+                <path
+                    d="M17.25,8.51H11.5V2.75A1.5,1.5,0,0,0,10,1.25h0a1.5,1.5,0,0,0-1.5,1.5V8.5H2.75a1.5,1.5,0,0,0,0,3H8.5v5.75a1.5,1.5,0,0,0,1.5,1.5h0a1.5,1.5,0,0,0,1.5-1.5V11.5h5.75a1.5,1.5,0,0,0,0-3Z">
+                </path>
+            </svg>
+        </div>
+    </div>
+    <div class="rx-card">
+        dsdsds
+    </div>
+</div> -->
+
+<app-footer></app-footer>
